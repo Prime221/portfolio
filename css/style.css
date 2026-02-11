@@ -16,7 +16,7 @@
 
 :root {
   --bg-color: rgb(11, 5, 33) ;
-  --second-bg-color: #323946;
+  --second-bg-color: #1c222d;
   --text-color: #fff;     
   --main-color: rgb(231, 159, 204);
 }
@@ -461,10 +461,12 @@ transform: translateY(0);
 
   .home-content h3{
     font-size: 2.6rem;
+    text-align: center;
   }
 
   .home-content h1{
     font-size: 5rem;
+    text-align: center;
   }
 
   .home-img image {
@@ -475,7 +477,14 @@ transform: translateY(0);
   .about {
     flex-direction: column-reverse;
   }
+  .about-content h2{
+    text-align: center;
+  }
 
+  .about-content {
+    text-align: center;
+  }
+  
   .about img {
     width: 70vw;
     margin-top: 4rem;
