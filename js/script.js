@@ -63,10 +63,28 @@ ScrollReveal().reveal('.home-content p, .about-content', { origin: 'right' });
 /*---typed js----*/
 
 const typed = new Typed('.multiple-text', {
-  strings: ['Web Developer', 'Researcher'],
+  strings: ['Full-Stack Developer', 'Scalable Web Applications Builder', 'Software Engineer', 'Researcher'],
   typeSpeed: 100,
   backSpeed: 100,
   backDelay: 1000,
   loop: true
 });
+
+let images = [
+  "images/portfolio1.jpg",
+  "images/portfolio2.jpg",
+  "images/portfolio3.jpg",
+  "images/portfolio4.jpg"
+];
+
+let index = 0;
+let slider = document.getElementById("slider");
+
+setInterval(() => {
+  index++;
+  if (index >= images.length) {
+    index = 0;
+  }
+  slider.src = images[index];
+}, 3000); // change every 3 seconds
 

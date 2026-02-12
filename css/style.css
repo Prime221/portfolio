@@ -97,6 +97,7 @@ align-items: center;
   width: 35vw;
   border-radius:0% ;
   animation: floatImage 4s ease-in-out infinite;
+  object-fit: cover;
 }
 
 @keyframes floatImage {
@@ -244,8 +245,8 @@ span {
   font-size: 1.6rem;
   margin: 1rem 0 3rem;
   display: -webkit-box;
-    -webkit-box-orient: vertical;
-    -webkit-line-clamp: 2;
+   /* -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;  */
     overflow: hidden;
     text-overflow: ellipsis;
 }
