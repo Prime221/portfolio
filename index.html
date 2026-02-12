@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Personal Portfolio</title>
+  <title>Prime's Portfolio</title>
 
   <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
@@ -13,7 +13,7 @@
 <body>
 
   <header class="header">
-    <a href="#" class="logo">Portfolio</a>
+    <a href="#" class="logo"><i>Prime</i></a>
 
     <i class="bx bx-menu" id="menu-icon"></i>
 
@@ -101,40 +101,40 @@
 
   <!-- portfolio section design  -->
   <section class="portfolio" id="portfolio">
-    <h2 class="heading">Latest <span>Project</span></h2>
+    <h2 class="heading">Latest <span>Projects</span></h2>
 
     <div class="portfolio-container">
       <div class="portfolio-box">
-        <img src="images/portfolio1.jpg" alt="portfolio image">
+        <img src="images/hospi.png" alt="hospital management system image">
         <div class="portfolio-layer">
-          <h4>Project Title</h4>
+          <h4>Hospital Management System</h4>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas, eaque.</p>
           <a href="#"><i class='bx bx-link-external'></i></a>
         </div>
       </div>
 
       <div class="portfolio-box">
-        <img src="images/portfolio2.jpg" alt="portfolio image">
+        <img src="images/foody.png" alt="portfolio image">
         <div class="portfolio-layer">
-          <h4>Project Title</h4>
+          <h4>Food Cart Management</h4>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas, eaque.</p>
           <a href="#"><i class='bx bx-link-external'></i></a>
         </div>
       </div>
 
       <div class="portfolio-box">
-        <img src="images/portfolio3.jpg" alt="portfolio image">
+        <img src="images/shop.png" alt="portfolio image">
         <div class="portfolio-layer">
-          <h4>Project Title</h4>
+          <h4>Shopping Cart</h4>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas, eaque.</p>
           <a href="#"><i class='bx bx-link-external'></i></a>
         </div>
       </div>
 
       <div class="portfolio-box">
-        <img src="images/portfolio4.jpg" alt="portfolio image">
+        <img src="images/calc.png" alt="portfolio image">
         <div class="portfolio-layer">
-          <h4>Project Title</h4>
+          <h4>Basic Calculator</h4>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas, eaque.</p>
           <a href="#"><i class='bx bx-link-external'></i></a>
         </div>
@@ -146,14 +146,15 @@
   <section class="contact" id="contact">
     <h2 class="heading">Contact <span>Me!</span></h2>
 
-    <form action="#">
+    <form action="https://api.web3forms.com/submit" method="POST">
       <div class="input-box">
-        <input type="text" placeholder="Full Name">
-        <input type="email" placeholder="Email Address">
+        <input type="hidden" name="access_key" value="8c8c7292-5fd9-48f5-b264-24e50e5abb77">
+        <input type="text" id="name" placeholder="Full Name" name="name" required>
+        <input type="email" id="email" placeholder="Email Address" name="email" required>
       </div>
       <div class="input-box">
-        <input type="number" placeholder="Mobile Number">
-        <input type="text" placeholder="Email Subject">
+        <input type="number" id="number" placeholder="Mobile Number" name="number" required>
+        <input type="text" id="text" placeholder="Email Subject" name="text">
       </div>
       <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
       <input type="submit" value="Send Message" class="btn">
